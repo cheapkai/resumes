@@ -1,0 +1,138 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.80]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Neal}{Karpe}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{E-302 OBH, IIIT Hyderabad, India - 500032}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+91~9160922863}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{nealkarpe@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{web.iiit.ac.in/~neal.karpe}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Work Experience}
+\cventry{Summer '18}{Software Engineering Intern}{ARRIS}{Sunnyvale, California, USA}{}{Worked in 'Ruckus IoT' division at Ruckus Networks (an ARRIS company) HQ. Contributed 4000+ lines in the product's front-end source code. Also developed a Simulator software for IoT Gateways and End-Points. The Simulator uses multithreaded MQTT clients with a common state database, and simulates a wide range of Zigbee/BLE IoT device profiles \& capabilities.
+}
+\cventry{Winter '17}{Mobile Application Development Intern}{Froogal.in}{Hyderabad, India}{}{Developed a cross-platform mobile application which connects highway travelers with restaurants. Provides restaurants located on highways with map-based tracking of customer’s location, so that the order can be kept ready by the time the customer arrives.
+}
+
+
+\section{Education}
+\cventry{2016--2020}{B.Tech (Hons.), Computer Science and Engineering}{International Institute of Information Technology (IIIT)}{Hyderabad, India}{\textit{CGPA - 8.87/10}}{}  % arguments 3 to 6 can be left empty
+\cventry{2014--2016}{Senior Secondary, Telangana Board of Intermediate Education}{Sri Chaitanya Junior College}{Hyderabad, India}{\textit{Percentage - 97.5}}{}
+\cventry{2012--2014}{Secondary, CBSE}{Oakridge International School}{Hyderabad, India}{\textit{CGPA - 10/10}}{}
+
+\section{Research}
+\cventry{August 2018 -- present}{Honours Research}{Data Sciences and Analytics Center}{IIIT Hyderabad}{}{Working on a ‘Research Paper Sequence Suggestion’ project under Dr. Vikram Pudi.}
+%\cventry{Monsoon '18}{Teaching Assistant}{Structured Systems Analysis \& Design}{IIIT Hyderabad}{}{Involves making assignments, grading, and conducting tutorials for a class of 173 students. Also involves facilitating communication between students and external clients for course project.}
+
+\section{Skills}
+\cvitem{Languages}{C, C++, Python, Ruby, JavaScript, Racket, MIPS (Assembly Language), Bash, MATLAB}
+\cvitem{OS}{GNU/Linux, Windows}
+\cvitem{Web Dev}{HTML5, CSS, Bootstrap, jQuery, AJAX, ReactJS, Redux}
+\cvitem{Frameworks}{Flask, Ruby on Rails, React Native, OpenGL}
+\cvitem{Databases}{MySQL, SQLite, XQuery, Solr, Neo4j}
+
+
+\definecolor{linkcolor}{RGB}{0, 0, 238}
+
+
+
+
+\section{Projects}
+\cventry{Python}{Ultimate Tic-Tac-Toe (UTTT) Bot}{(Team of 2)}{}{}{Developed an agent that guesses the optimal move using minimax algorithm with alpha-beta pruning, and a smart heuristic function. Placed \textbf{2\textsuperscript{nd}} in AI-course UTTT tournament out of \textbf{75} bots.}
+\cventry{C}{Linux Shell}{}{}{}{Created a bash shell with features like piping, redirection, background \& foreground processes, etc.}
+
+\cventry{Python}{Proxy Server}{}{}{}{Used socket programming to develop an HTTP web proxy server that caches web pages.}
+\cventry{Flask, JS \& SQL}{Photo Gallery Web Application}{}{}{}{Built an Instagram-like web application using Flask, JavaScript, and SQL.}
+\cventry{Python}{Bomberman game}{}{}{}{Developed a terminal-based Bomberman game in Python, without the help of any libraries like pygame, ncurses, etc.}
+\cventry{Ruby on rails}{Quiz Portal}{}{}{}{Developed a state-restoring quizzing application using Ruby On Rails.}
+\cventry{HTML5, CSS \& Flask}{Felicity Buzz Website}{}{}{}{As a team, developed University Fest website using HTML5, CSS, and Flask.}
+\cventry{C++}{2D Animated Game}{}{}{}{Built an arcade game (inspired by ‘Pacman Killer’) in C++ using OpenGL. Incorporated laws of physics and various real-world phenomena (gravity, sinking in water, magnetic field, etc.) into the game.}
+\cventry{C++}{3D World}{}{}{}{Made a complex 3D world emulation using OpenGL in which the user operates a boat and shoots monsters. Implemented many detailed features (wind, booster, coins, bosses, etc.) as well as camera views.}
+
+
+
+
+\section{Achievements \& Co-Curriculars}
+\cvlistitem{\textbf{Dean’s List '17:} Top 5\% in academics in Spring 2017.}
+\cvlistitem{\textbf{JEE Advanced:} Ranked 2185 (top 0.01\% in India) in Joint Entrance Exam (JEE) Advanced.}
+\cvlistitem{\textbf{SAT Subject Tests:} Scored 800/800 in Mathematics, Physics and Chemistry.}
+\cvlistitem{\textbf{Piano:} Awarded Grade 5 Piano Certification by Trinity College, London.}
+\cvlistitem{\textbf{Basketball:} Represented Oakridge International School in CBSE National Basketball Meet 2013. Won two city Inter-School Tournaments as part of the same team.}
+
+
+
+
+
+\section{Relevant Courses Taken}
+\cvitem{}{Statistical Methods in AI, Data Warehousing and Data Mining, Introduction to Databases, Artificial Intelligence, Computer Programming, Data Structures, Algorithms, Discrete Mathematics, Group Theory \& Complex Algebra, Complex Integrals \& Probability Theory, Formal Methods, IT Workshop I \& II, Structured Systems Analysis \& Design, Computer Architecture, Operating Systems, Computer Networks, Digital Signal Analysis \& Applications, Graphics}
+%\cvitem{}{\textit{* = In Progress}}
+
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+
+\end{document}
+
+
+%% end of file `template.tex'.
